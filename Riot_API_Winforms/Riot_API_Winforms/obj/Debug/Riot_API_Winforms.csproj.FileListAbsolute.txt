@@ -1,0 +1,10 @@
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\bin\Debug\Riot_API_Winforms.exe.config
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\bin\Debug\Riot_API_Winforms.exe
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\bin\Debug\Riot_API_Winforms.pdb
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\obj\Debug\Riot_API_Winforms.csprojAssemblyReference.cache
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\obj\Debug\Riot_API_Winforms.Form1.resources
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\obj\Debug\Riot_API_Winforms.Properties.Resources.resources
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\obj\Debug\Riot_API_Winforms.csproj.GenerateResource.cache
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\obj\Debug\Riot_API_Winforms.csproj.CoreCompileInputs.cache
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\obj\Debug\Riot_API_Winforms.exe
+C:\Users\mikae\Documents\Riot_API_Final\Riot_API\Riot_API_Winforms\Riot_API_Winforms\obj\Debug\Riot_API_Winforms.pdb
