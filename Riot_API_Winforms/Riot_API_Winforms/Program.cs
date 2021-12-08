@@ -16,7 +16,7 @@ namespace Riot_API_Winforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Summoner_Search());
         }
     }
 }
