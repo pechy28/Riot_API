@@ -106,6 +106,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -120,6 +121,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\ranked-emblems\1.png" />
+    <Content Include="Images\ranked-emblems\2.png" />
+    <Content Include="Images\ranked-emblems\3.png" />
+    <Content Include="Images\ranked-emblems\4.png" />
+    <Content Include="Images\ranked-emblems\5.png" />
+    <Content Include="Images\ranked-emblems\6.png" />
+    <Content Include="Images\ranked-emblems\7.png" />
+    <Content Include="Images\ranked-emblems\8.png" />
+    <Content Include="Images\ranked-emblems\9.png" />
+    <None Include="Resources\1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

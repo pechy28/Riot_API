@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Summoner_Search));
             this.APITextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,14 +54,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.levelTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.badgePictureBox = new System.Windows.Forms.PictureBox();
             this.summonerDetailsGroupBox = new System.Windows.Forms.GroupBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.credentialsGroupBox.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.recentMatchGroupBox.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.badgePictureBox)).BeginInit();
             this.summonerDetailsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -256,7 +256,7 @@
             // 
             // winsTextBox
             // 
-            this.winsTextBox.Location = new System.Drawing.Point(7, 111);
+            this.winsTextBox.Location = new System.Drawing.Point(11, 44);
             this.winsTextBox.Name = "winsTextBox";
             this.winsTextBox.ReadOnly = true;
             this.winsTextBox.Size = new System.Drawing.Size(208, 20);
@@ -264,7 +264,7 @@
             // 
             // losesTextBox
             // 
-            this.losesTextBox.Location = new System.Drawing.Point(7, 153);
+            this.losesTextBox.Location = new System.Drawing.Point(11, 86);
             this.losesTextBox.Name = "losesTextBox";
             this.losesTextBox.ReadOnly = true;
             this.losesTextBox.Size = new System.Drawing.Size(208, 20);
@@ -273,24 +273,25 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 95);
+            this.label7.Location = new System.Drawing.Point(11, 28);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 13);
+            this.label7.Size = new System.Drawing.Size(145, 13);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Wins";
+            this.label7.Text = "Wins (From Recent Matches)";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 137);
+            this.label8.Location = new System.Drawing.Point(11, 70);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.Size = new System.Drawing.Size(154, 13);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Losses";
+            this.label8.Text = "Losses (From Recent Matches)";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // levelTextBox
             // 
-            this.levelTextBox.Location = new System.Drawing.Point(7, 192);
+            this.levelTextBox.Location = new System.Drawing.Point(11, 125);
             this.levelTextBox.Name = "levelTextBox";
             this.levelTextBox.ReadOnly = true;
             this.levelTextBox.Size = new System.Drawing.Size(208, 20);
@@ -299,36 +300,33 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 176);
+            this.label9.Location = new System.Drawing.Point(11, 109);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(33, 13);
             this.label9.TabIndex = 13;
             this.label9.Text = "Level";
             // 
-            // badgePictureBox
-            // 
-            this.badgePictureBox.Location = new System.Drawing.Point(225, 20);
-            this.badgePictureBox.Name = "badgePictureBox";
-            this.badgePictureBox.Size = new System.Drawing.Size(67, 69);
-            this.badgePictureBox.TabIndex = 14;
-            this.badgePictureBox.TabStop = false;
-            // 
             // summonerDetailsGroupBox
             // 
-            this.summonerDetailsGroupBox.Controls.Add(this.badgePictureBox);
             this.summonerDetailsGroupBox.Controls.Add(this.label9);
             this.summonerDetailsGroupBox.Controls.Add(this.levelTextBox);
             this.summonerDetailsGroupBox.Controls.Add(this.label8);
             this.summonerDetailsGroupBox.Controls.Add(this.label7);
             this.summonerDetailsGroupBox.Controls.Add(this.losesTextBox);
             this.summonerDetailsGroupBox.Controls.Add(this.winsTextBox);
-            this.summonerDetailsGroupBox.Location = new System.Drawing.Point(12, 195);
+            this.summonerDetailsGroupBox.Location = new System.Drawing.Point(13, 216);
             this.summonerDetailsGroupBox.Name = "summonerDetailsGroupBox";
-            this.summonerDetailsGroupBox.Size = new System.Drawing.Size(298, 217);
+            this.summonerDetailsGroupBox.Size = new System.Drawing.Size(298, 167);
             this.summonerDetailsGroupBox.TabIndex = 1;
             this.summonerDetailsGroupBox.TabStop = false;
             this.summonerDetailsGroupBox.Text = "Summoner Details";
             this.summonerDetailsGroupBox.Enter += new System.EventHandler(this.summonerDetailsGroupBox_Enter);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // Summoner_Search
             // 
@@ -351,7 +349,6 @@
             this.recentMatchGroupBox.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.badgePictureBox)).EndInit();
             this.summonerDetailsGroupBox.ResumeLayout(false);
             this.summonerDetailsGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -384,8 +381,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox levelTextBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox badgePictureBox;
         private System.Windows.Forms.GroupBox summonerDetailsGroupBox;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

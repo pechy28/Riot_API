@@ -13,6 +13,8 @@ using MingweiSamuel.Camille.SummonerV4;
 using System.Windows.Forms;
 using MingweiSamuel.Camille.MatchV4;
 using MingweiSamuel.Camille.LeagueV4;
+using System.IO;
+using Match = MingweiSamuel.Camille.MatchV5.Match;
 
 namespace Riot_API_Winforms
 {
@@ -120,6 +122,10 @@ namespace Riot_API_Winforms
                 Console.WriteLine(m);
             }
 
+            Match m1 = riotApi.MatchV5.GetMatch(continent, matches[0]);
+           var dictionary = m1._AdditionalProperties;
+            var listPlayer = dictionary["participants"];
+            Console.WriteLine(listPlayer);
 
             puuidTextBox.Text = summoner.Puuid;
         }
@@ -131,7 +137,15 @@ namespace Riot_API_Winforms
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            
+            losersListBox.Items.Clear();
+            winnersListBox.Items.Clear();
+            matchesListBox.Items.Clear();
+            regionComboBox.ResetText();
+            puuidTextBox.Text = String.Empty;
+            summonerTextBox.Text = String.Empty;
+            winsTextBox.Text = String.Empty;
+            losesTextBox.Text = String.Empty;
+            levelTextBox.Text = String.Empty;
         }
 
         private void summonerTextBox_TextChanged(object sender, EventArgs e)
@@ -155,6 +169,11 @@ namespace Riot_API_Winforms
         }
 
         private void ratingTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
