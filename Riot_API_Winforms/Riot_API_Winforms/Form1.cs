@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MingweiSamuel.Camille;
 using MingweiSamuel.Camille.Enums;
 using MingweiSamuel.Camille.MatchV5;
@@ -20,6 +13,8 @@ namespace Riot_API_Winforms
 {
     public partial class Summoner_Search : Form
     {
+        public object _matchInfo { get; private set; }
+
         public Summoner_Search()
         {
             InitializeComponent();
@@ -106,12 +101,16 @@ namespace Riot_API_Winforms
             levelTextBox.Text = summoner.SummonerLevel.ToString();
 
 
+
             //Task<LeagueList> leagueList = riotApi.LeagueV4.GetLeagueByIdAsync(region, "7mWpUTSIHj7zL7QCTXre7V9sFpSa8uSOiQepOnEBJV-VrXc");
             //leagueList.ToString();
             //Console.WriteLine(leagueList.ToString());
 
+            
 
             string[] matches = riotApi.MatchV5.GetMatchIdsByPUUID(continent, summoner.Puuid, null, 20);
+
+
 
             //Matchlist matches = riotApi.MatchV4.GetMatchlist(region, summoner.AccountId, cham);
             Console.WriteLine(matches);
@@ -121,6 +120,9 @@ namespace Riot_API_Winforms
                 matchesListBox.Items.Add(m);
                 Console.WriteLine(m);
             }
+
+
+
 
             //Match m1 = riotApi.MatchV5.GetMatch(continent, matches[0]);
            //var dictionary = m1._AdditionalProperties;
