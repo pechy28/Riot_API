@@ -122,10 +122,10 @@ namespace Riot_API_Winforms
                 Console.WriteLine(m);
             }
 
-            Match m1 = riotApi.MatchV5.GetMatch(continent, matches[0]);
-           var dictionary = m1._AdditionalProperties;
-            var listPlayer = dictionary["participants"];
-            Console.WriteLine(listPlayer);
+            //Match m1 = riotApi.MatchV5.GetMatch(continent, matches[0]);
+           //var dictionary = m1._AdditionalProperties;
+            //var listPlayer = dictionary["participants"];
+            //Console.WriteLine(listPlayer);
 
             puuidTextBox.Text = summoner.Puuid;
         }
