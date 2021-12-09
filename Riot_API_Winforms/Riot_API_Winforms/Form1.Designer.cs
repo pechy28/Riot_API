@@ -70,7 +70,6 @@
             this.APITextBox.Name = "APITextBox";
             this.APITextBox.Size = new System.Drawing.Size(313, 20);
             this.APITextBox.TabIndex = 0;
-            this.APITextBox.Text = "RGAPI-6b79bca0-b415-4830-80b6-f42490efb2d3";
             this.APITextBox.TextChanged += new System.EventHandler(this.APITextBox_TextChanged);
             // 
             // label1
